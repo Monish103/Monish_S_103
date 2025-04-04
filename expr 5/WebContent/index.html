@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GET vs POST Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            padding: 40px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+
+        input[type="text"] {
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4285F4;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTTP GET vs POST Demonstration</h1>
+
+    <h2>GET Method Form</h2>
+    <form action="GetPostDemoServlet" method="get">
+        Name: <input type="text" name="username">
+        <input type="submit" value="Submit via GET">
+    </form>
+
+    <h2>POST Method Form</h2>
+    <form action="GetPostDemoServlet" method="post">
+        Name: <input type="text" name="username">
+        <input type="submit" value="Submit via POST">
+    </form>
+</body>
+</html>
